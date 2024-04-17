@@ -1,6 +1,6 @@
 import { db } from "@/db";
-import Image from "next/image";
-import { use } from "react";
+
+export const dynamic = 'force-dynamic'
 
 async function getUsers() {
   return db.user.findMany();
