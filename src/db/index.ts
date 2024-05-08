@@ -36,6 +36,6 @@ pool.on('acquire', () => {
     console.log('pg.Pool client was released')
   }
 });
-
+// https://github.com/brianc/node-pg-pool/issues/116
 const adapter = new PrismaNeon(pool)
 export const db = new PrismaClient({ adapter })
