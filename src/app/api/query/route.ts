@@ -1,8 +1,6 @@
 import { db } from "@/db";
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge"
 const start = Date.now();
 export async function GET(req: Request) {
   const time = Date.now();
